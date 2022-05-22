@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.addVehicleActivity">
+
+    <EditText
+        android:id="@+id/CarModelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="Car Model"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/CapacityText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/CapacityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="26dp"
+        android:ems="10"
+        android:hint="Capacity"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/VehicleTypeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CarModelText" />
+
+    <EditText
+        android:id="@+id/VehicleTypeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:hint="Vehicle Type"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/basePriceText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CapacityText" />
+
+    <EditText
+        android:id="@+id/basePriceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:hint="Base Price"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/addVehicleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VehicleTypeText" />
+
+    <Button
+        android:id="@+id/addVehicleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginBottom="269dp"
+        android:onClick="addVA"
+        android:text="Add Vehicle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basePriceText" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="46dp"
+        android:layout_marginBottom="2dp"
+        android:text="Green?"
+        app:layout_constraintBottom_toTopOf="@+id/addVehicleButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/basePriceText"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
